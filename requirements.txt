@@ -1,3 +1,7 @@
+Click 
+Flask
+Jinja2
+MarkupSafe
 django
 gunicorn
 django-heroku
