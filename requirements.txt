@@ -7,3 +7,5 @@ json5==0.9.1
 MarkupSafe==1.1.1
 Werkzeug==1.0.0
 gunicorn == 20.0.4
+whitenoise ==5.0.1
+

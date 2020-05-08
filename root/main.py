@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import json
+
 app = Flask(__name__)
 #with open( 'editions.json', "r") as edition:
 #	editions = json.load(edition)
@@ -23,7 +24,7 @@ def apiget(action):
 if __name__ == '__main__':
 	editions = {
 		"Category":"Ïîë³òèêà",
-		"Nane":"Ãàçåòà ïî-óêðà¿íñüêè",
+		"Name":"Ãàçåòà ïî-óêðà¿íñüêè",
 		"Price":"220",
 		"Index":"86555"
 		}
