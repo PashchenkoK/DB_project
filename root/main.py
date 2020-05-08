@@ -6,7 +6,9 @@ with open("editions.json", "r") as edition:
 
 with open("customers.json", "r") as customer:
 	customers = json.load(customer)
-
+@app.route('/', methods = ['GET', 'POST'])
+def wel():
+	return "Welcome!"
 
 @app.route('/api/<action>', methods = ['GET', 'POST'])
 def apiget(action):
