@@ -11,7 +11,7 @@ with open("customers.json", "r") as customer:
 @app.route('/api/<action>', methods = ['GET', 'POST'])
 def apiget(action):
 	if action == 'edition':
-		return render_template('edition.html', edition = editions)
+		return render_template('editions.html', edition = editions)
 	elif action == 'customer': #замовник
 		return render_template('customer.html', customer = customers)
 	elif action == 'all':
