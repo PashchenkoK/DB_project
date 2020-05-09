@@ -22,7 +22,7 @@ def apiget(action):
 	else:
 		return render_template('error.html')"""
 
-@app.route('/api/<action>', methods = ['GET', 'POST'])
+@app.route('/api', methods = ['GET', 'POST'])
 def apiget():
 	return render_template('error.html') 
 
