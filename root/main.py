@@ -1,14 +1,14 @@
 from flask import Flask, render_template
-import json
+#import json
 
 app = Flask(__name__)
 
-with open('customers.json', "r") as customer:
-	customers = json.load(customer)
+#with open('customers.json', "r") as customer:
+#	customers = json.load(customer)
 
 
-with open( 'editions.json', "r") as edition:
-	editions = json.load(edition)
+#with open( 'editions.json', "r") as edition:
+#	editions = json.load(edition)
 
 
 @app.route('/api/<action>', methods = ['GET', 'POST'])
@@ -24,4 +24,17 @@ def apiget(action):
 
 
 if __name__ == '__main__':
+	editions =  {
+	"Category":"Політика",
+	"Nane":"Газета по-українськи",
+	"Price":"220",
+	"Index":"86555"
+	}
+
+	customers = {
+	"Name":"Петреноко Петро Перович",
+	"Email":"user@mail.com",
+	"Phone":"0111111111"
+	}
+
 	app.run(debug = True)
