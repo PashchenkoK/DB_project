@@ -1,1 +1,1 @@
-web: gunicorn root.main:app --log-file -; flask translate compile; 
+web: gunicorn gettingstarted.wsgi --log-file -
