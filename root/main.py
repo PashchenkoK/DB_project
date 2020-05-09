@@ -3,7 +3,7 @@ import json
 
 app = Flask(__name__)
 
-with open('customers.json', "r") as customer:
+"""with open('customers.json', "r") as customer:
 	customers = json.load(customer)
 
 
@@ -20,8 +20,11 @@ def apiget(action):
 	elif action == 'all':
 		return render_template('all.html', edition = editions, customer = customers)
 	else:
-		return render_template('error.html')
+		return render_template('error.html')"""
 
+@app.route('/api/<action>', methods = ['GET', 'POST'])
+def apiget():
+	return render_template('error.html') 
 
 if __name__ == '__main__':
 	app.run(debug = True)
