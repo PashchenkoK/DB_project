@@ -13,7 +13,7 @@ def apiget(action):
 		return render_template('all.html', edition = editions, customer = customers)
 	else:
 		return render_template('error.html')
-		
+
 editions =  {
 	"Category":"Політика",
 	"Nane":"Газета по-українськи",
@@ -27,8 +27,4 @@ customers = {
 	}
 
 if __name__ == '__main__':
-	
-
-	
-
 	app.run(debug = True)
